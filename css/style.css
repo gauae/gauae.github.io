@@ -10,7 +10,7 @@ p {
 body {
   font-family: 'Poppins', sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #17a2b8;
 }
 
 .layout_margin {
@@ -65,7 +65,7 @@ body {
           flex: 1;
   max-width: 200px;
   height: 3px;
-  background-color: #51b5ef;
+  background-color: #6610f2;
 }
 
 .hero_next_section-margin {
@@ -86,8 +86,8 @@ body {
   width: 18%;
   min-width: 260px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#51b5ef), to(#436bf1));
-  background: linear-gradient(to right, #51b5ef, #436bf1);
+  background: -webkit-gradient(linear, left top, right top, from(#6610f2), to(#436bf1));
+  background: linear-gradient(to right, #6610f2, #436bf1);
 }
 
 .sub_page .hero_area {
@@ -348,16 +348,16 @@ a:focus {
 .slider_section .detail-box .btn-box .btn-1 {
   display: inline-block;
   padding: 10px 0px;
-  background-color: #51b5ef;
+  background-color: #6610f2;
   color: #ffffff;
-  border: 1px solid #51b5ef;
+  border: 1px solid #6610f2;
   text-transform: uppercase;
   margin-right: 10px;
 }
 
 .slider_section .detail-box .btn-box .btn-1:hover {
   background-color: transparent;
-  color: #51b5ef;
+  color: #6610f2;
 }
 
 .slider_section .detail-box .btn-box .btn-2 {
@@ -387,7 +387,7 @@ a:focus {
 .slider_section #carouselExampleIndicators {
   max-width: 400px;
   padding: 75px 0 60px 0;
-  background-color: #ffffff;
+  background-color: #ffc107;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,7 +491,7 @@ a:focus {
   height: auto;
   text-indent: 0;
   opacity: 1;
-  color: #959494;
+  color: #28a745;
   background-color: transparent;
   display: none;
 }
@@ -663,7 +663,7 @@ a:focus {
 .hot_section .owl-carousel .owl-nav .owl-next {
   width: 50px;
   height: 50px;
-  background-color: #51b5ef;
+  background-color: #6610f2;
   background-size: 9px;
   background-position: center;
   background-repeat: no-repeat;
@@ -784,7 +784,7 @@ a:focus {
   width: 20px;
   height: 20px;
   opacity: 1;
-  background-color: #51b5ef;
+  background-color: #6610f2;
   border-radius: 100%;
 }
 
@@ -833,8 +833,8 @@ a:focus {
 
 .contact_section .form_container button {
   background-color: transparent;
-  border: 2px solid #51b5ef;
-  color: #51b5ef;
+  border: 2px solid #6610f2;
+  color: #6610f2;
   text-transform: uppercase;
   padding: 6px 40px;
   border-radius: 25px;

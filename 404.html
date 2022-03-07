@@ -50,6 +50,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="sub_page">
@@ -98,20 +100,41 @@
       <div class="row">
         <div class="col-md-7">
           <div class="form_container">
-            <form action="">
-              <input type="text" placeholder="Name">
-              <input type="text" placeholder="Phone number">
-              <input type="email" placeholder="Email">
-              <input type="text" placeholder="Message" class="message_input">
+             <form id="submit-form" action="">
+              <input type="text" name= "name" placeholder="Name" required >
+              <input type="number" name= "number" placeholder="Phone number" required >
+              <input type="email" name= "email" placeholder="Email" required >
+              <input type="text" name= "message" placeholder="Message" class="message_input" required >
               <button>
                 Send
               </button>
             </form>
           </div>
         </div>
+
+        <script>
+          $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbzKbey2N7ZWeMBaOaFO11uauaVY3HaMrjzTu1aOVZgUnxkVr4DP8nB19arnv2Tlw9xtcw/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+          alert("Our team will be in contact with you shortly. Thank you!")
+          window.location.reload()
+          //window.location.href="https://google.com"
+          },
+          error:function (err){
+          alert("Something Error")
+          
+          }
+          })
+          })
+          </script>
+
         <div class="col-md-5">
           <div class="contact_box">
-            <a href="">
+            <a href="https://goo.gl/maps/BYy4XZpvCRRyi52d7" target="_blank">
               <div class="img-box">
                 <img src="images/location.png" alt="">
               </div>
@@ -129,7 +152,7 @@
             </a>
             <a href="https://api.whatsapp.com/send?phone=971565088235&amp;text=" target="_blank">
               <div class="img-box">
-                <img src="img/call/whatsapp.png" alt="">
+                <img src="img/call/whats.png" alt="">
               </div>
               <h6>
                 +971 56 5088235
@@ -140,7 +163,7 @@
                 <img src="images/envelope.png" alt="">
               </div>
               <h6>
-                sales@greenarrowbmt.com
+                SALES EMAIL
               </h6>
             </a>
           </div>
@@ -164,7 +187,7 @@
           </div>
           <div class="col-lg-9 col-md-8">
             <div class="box">
-              <input type="email" placeholder="Enter your email" id="subEmail">
+              <input type="email" placeholder="Enter your email" id="subEmail" required >
               <button>
                 Subscribe
               </button>
