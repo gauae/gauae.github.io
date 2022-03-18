@@ -10,7 +10,7 @@ p {
 body {
   font-family: 'Poppins', sans-serif;
   color: #0c0c0c;
-  background-color: #17a2b8;
+  background-color: #f78da7;
 }
 
 .layout_margin {
@@ -86,8 +86,8 @@ body {
   width: 18%;
   min-width: 260px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#6610f2), to(#436bf1));
-  background: linear-gradient(to right, #6610f2, #436bf1);
+  background: -webkit-gradient(linear, left top, right top, from(#cf2e2e), to(#e0f143));
+  background: linear-gradient(to right, #cf2e2e, #e0f143);
 }
 
 .sub_page .hero_area {
@@ -348,7 +348,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn-1 {
   display: inline-block;
   padding: 10px 0px;
-  background-color: #6610f2;
+  background-color: #00d084;
   color: #ffffff;
   border: 1px solid #6610f2;
   text-transform: uppercase;
@@ -357,7 +357,7 @@ a:focus {
 
 .slider_section .detail-box .btn-box .btn-1:hover {
   background-color: transparent;
-  color: #6610f2;
+  color: #00d084;
 }
 
 .slider_section .detail-box .btn-box .btn-2 {
@@ -387,7 +387,7 @@ a:focus {
 .slider_section #carouselExampleIndicators {
   max-width: 400px;
   padding: 75px 0 60px 0;
-  background-color: #ffc107;
+  background-color: #00ffea;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
