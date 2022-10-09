@@ -49,6 +49,23 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <script>
+    var isNS = (navigator.appName == "PN") ? 1 : 0;
+    if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
+
 </head>
 
 <body class="sub_page">
@@ -280,7 +297,7 @@ Marble Fixing Accessories..
         </div>
         <div class="col-md-6 px-0">
           <div class="img-box">
-            <img src="img/about/greenarrow.png" alt="">
+            <img src="img/about/about1.jpg" alt="">
             <img src="img/about/greenarrow1.png" alt="">
             <img src="img/about/greenarrow2.png" alt="">
           </div>
